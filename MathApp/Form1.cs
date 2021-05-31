@@ -27,7 +27,8 @@ namespace MathApp
             textBox_Answer.Focus();
             menuStrip1.BackColor = Color.AntiqueWhite;
             MultiplyDiv multiplyDiv = new MultiplyDiv();
-            this.CheckMultiDiv.Text = multiplyDiv.ToString();
+            this.label3.Text = multiplyDiv.ToString();
+            this.CheckMultiDiv.Text = Convert.ToString(multiplyDiv.Division(multiplyDiv));
 
             try
             {

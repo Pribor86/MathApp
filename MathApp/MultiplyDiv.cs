@@ -28,13 +28,16 @@ namespace MathApp
                     break;
                 case 2:
                     {
+                        //a = rnd.Next(1, 11);
+                        //b = rnd.Next(1, 11);
+                        //answer = a * b;
                         a = rnd.Next(1, 101);
                         b = rnd.Next(1, 11);
                         bool flag = false;
                         while (!flag)
                         {
-                            
-                            if(a % b != 0)
+
+                            if (a % b != 0)
                             {
                                 a = rnd.Next(1, 101);
                                 b = rnd.Next(1, 11);
@@ -51,6 +54,18 @@ namespace MathApp
             }
 
             
+        }
+
+        public int Multiply(MultiplyDiv multiplyDiv)
+        {
+            int answer = a * b;
+            return answer;
+        }
+
+        public int Division(MultiplyDiv multiplyDiv)
+        {
+            int answer = a * b;
+            return answer;
         }
 
         public override string ToString()

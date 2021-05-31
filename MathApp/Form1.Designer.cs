@@ -59,6 +59,7 @@ namespace MathApp
             this.label_Mistake = new System.Windows.Forms.Label();
             this.CheckMultiDiv = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1_Answer_True)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1_Answer_False)).BeginInit();
@@ -181,13 +182,13 @@ namespace MathApp
             this.toolStripMenuItem_1_100,
             this.toolStripMenuItem_1_1000});
             this.summDiffToolStripMenuItem.Name = "summDiffToolStripMenuItem";
-            this.summDiffToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.summDiffToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
             this.summDiffToolStripMenuItem.Text = "Summ/Diff";
             // 
             // toolStripMenuItem_1_10
             // 
             this.toolStripMenuItem_1_10.Name = "toolStripMenuItem_1_10";
-            this.toolStripMenuItem_1_10.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem_1_10.Size = new System.Drawing.Size(115, 22);
             this.toolStripMenuItem_1_10.Text = "1 - 10";
             this.toolStripMenuItem_1_10.Click += new System.EventHandler(this.toolStripMenuItem_1_10_Click);
             // 
@@ -195,7 +196,7 @@ namespace MathApp
             // 
             this.toolStripMenuItem_1_100.Enabled = false;
             this.toolStripMenuItem_1_100.Name = "toolStripMenuItem_1_100";
-            this.toolStripMenuItem_1_100.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem_1_100.Size = new System.Drawing.Size(115, 22);
             this.toolStripMenuItem_1_100.Text = "1 - 100";
             this.toolStripMenuItem_1_100.Click += new System.EventHandler(this.toolStripMenuItem3_Click);
             // 
@@ -203,7 +204,7 @@ namespace MathApp
             // 
             this.toolStripMenuItem_1_1000.Enabled = false;
             this.toolStripMenuItem_1_1000.Name = "toolStripMenuItem_1_1000";
-            this.toolStripMenuItem_1_1000.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem_1_1000.Size = new System.Drawing.Size(115, 22);
             this.toolStripMenuItem_1_1000.Text = "1 - 1000";
             // 
             // multiToolStripMenuItem
@@ -213,27 +214,27 @@ namespace MathApp
             this.toolStripMenuItem_1_100_Multiply,
             this.toolStripMenuItem_1_1000_Multiply});
             this.multiToolStripMenuItem.Name = "multiToolStripMenuItem";
-            this.multiToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.multiToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
             this.multiToolStripMenuItem.Text = "Multi/Div";
             // 
             // toolStripMenuItem_1_10_Multiply
             // 
             this.toolStripMenuItem_1_10_Multiply.Name = "toolStripMenuItem_1_10_Multiply";
-            this.toolStripMenuItem_1_10_Multiply.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem_1_10_Multiply.Size = new System.Drawing.Size(115, 22);
             this.toolStripMenuItem_1_10_Multiply.Text = "1 - 10";
             // 
             // toolStripMenuItem_1_100_Multiply
             // 
             this.toolStripMenuItem_1_100_Multiply.Enabled = false;
             this.toolStripMenuItem_1_100_Multiply.Name = "toolStripMenuItem_1_100_Multiply";
-            this.toolStripMenuItem_1_100_Multiply.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem_1_100_Multiply.Size = new System.Drawing.Size(115, 22);
             this.toolStripMenuItem_1_100_Multiply.Text = "1 - 100";
             // 
             // toolStripMenuItem_1_1000_Multiply
             // 
             this.toolStripMenuItem_1_1000_Multiply.Enabled = false;
             this.toolStripMenuItem_1_1000_Multiply.Name = "toolStripMenuItem_1_1000_Multiply";
-            this.toolStripMenuItem_1_1000_Multiply.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem_1_1000_Multiply.Size = new System.Drawing.Size(115, 22);
             this.toolStripMenuItem_1_1000_Multiply.Text = "1 - 1000";
             // 
             // aboutToolStripMenuItem
@@ -297,7 +298,7 @@ namespace MathApp
             // CheckMultiDiv
             // 
             this.CheckMultiDiv.AutoSize = true;
-            this.CheckMultiDiv.Location = new System.Drawing.Point(24, 414);
+            this.CheckMultiDiv.Location = new System.Drawing.Point(12, 414);
             this.CheckMultiDiv.Name = "CheckMultiDiv";
             this.CheckMultiDiv.Size = new System.Drawing.Size(35, 13);
             this.CheckMultiDiv.TabIndex = 14;
@@ -306,17 +307,27 @@ namespace MathApp
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(27, 386);
+            this.label2.Location = new System.Drawing.Point(6, 352);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(59, 13);
             this.label2.TabIndex = 15;
             this.label2.Text = "Debugging";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(12, 376);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(47, 13);
+            this.label3.TabIndex = 16;
+            this.label3.Text = "label123";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(543, 450);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.CheckMultiDiv);
             this.Controls.Add(this.label_Mistake);
@@ -379,6 +390,7 @@ namespace MathApp
         private System.Windows.Forms.Label label_Mistake;
         private System.Windows.Forms.Label CheckMultiDiv;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }
 
