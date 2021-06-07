@@ -31,6 +31,7 @@ namespace MathApp
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
             this.button_Сheck = new System.Windows.Forms.Button();
@@ -61,6 +62,8 @@ namespace MathApp
             this.label2 = new System.Windows.Forms.Label();
             this.lable_A = new System.Windows.Forms.Label();
             this.lable_Answer_Debbug = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1_Answer_True)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1_Answer_False)).BeginInit();
@@ -182,7 +185,7 @@ namespace MathApp
             this.toolStripMenuItem_1_100,
             this.toolStripMenuItem_1_1000});
             this.summDiffToolStripMenuItem.Name = "summDiffToolStripMenuItem";
-            this.summDiffToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.summDiffToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
             this.summDiffToolStripMenuItem.Text = "Summ/Diff";
             // 
             // toolStripMenuItem_1_10
@@ -213,28 +216,28 @@ namespace MathApp
             this.toolStripMenuItem_1_100_Multiply,
             this.toolStripMenuItem_1_1000_Multiply});
             this.multiToolStripMenuItem.Name = "multiToolStripMenuItem";
-            this.multiToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.multiToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
             this.multiToolStripMenuItem.Text = "Multi/Div";
             this.multiToolStripMenuItem.Click += new System.EventHandler(this.multiToolStripMenuItem_Click);
             // 
             // toolStripMenuItem_1_10_Multiply
             // 
             this.toolStripMenuItem_1_10_Multiply.Name = "toolStripMenuItem_1_10_Multiply";
-            this.toolStripMenuItem_1_10_Multiply.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem_1_10_Multiply.Size = new System.Drawing.Size(115, 22);
             this.toolStripMenuItem_1_10_Multiply.Text = "1 - 10";
             this.toolStripMenuItem_1_10_Multiply.Click += new System.EventHandler(this.toolStripMenuItem_1_10_Multiply_Click);
             // 
             // toolStripMenuItem_1_100_Multiply
             // 
             this.toolStripMenuItem_1_100_Multiply.Name = "toolStripMenuItem_1_100_Multiply";
-            this.toolStripMenuItem_1_100_Multiply.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem_1_100_Multiply.Size = new System.Drawing.Size(115, 22);
             this.toolStripMenuItem_1_100_Multiply.Text = "1 - 100";
             this.toolStripMenuItem_1_100_Multiply.Click += new System.EventHandler(this.toolStripMenuItem_1_100_Multiply_Click);
             // 
             // toolStripMenuItem_1_1000_Multiply
             // 
             this.toolStripMenuItem_1_1000_Multiply.Name = "toolStripMenuItem_1_1000_Multiply";
-            this.toolStripMenuItem_1_1000_Multiply.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem_1_1000_Multiply.Size = new System.Drawing.Size(115, 22);
             this.toolStripMenuItem_1_1000_Multiply.Text = "1 - 1000";
             this.toolStripMenuItem_1_1000_Multiply.Click += new System.EventHandler(this.toolStripMenuItem_1_1000_Multiply_Click);
             // 
@@ -332,11 +335,27 @@ namespace MathApp
             this.lable_Answer_Debbug.TabIndex = 17;
             this.lable_Answer_Debbug.Text = "lable_Answer_Debbug";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(23, 41);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(261, 24);
+            this.label3.TabIndex = 18;
+            this.label3.Text = "Выбери в Options пример";
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 750;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick_1);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(543, 450);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.lable_Answer_Debbug);
             this.Controls.Add(this.lable_A);
             this.Controls.Add(this.label2);
@@ -403,6 +422,8 @@ namespace MathApp
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lable_A;
         private System.Windows.Forms.Label lable_Answer_Debbug;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 
